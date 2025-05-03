@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import pandas as pd
 import numpy as np
 import json
@@ -805,7 +804,7 @@ def main():
     DEBUG = False
     
     print("Processing L1 data...")
-    snapshots = process_level1_data('c:/Users/moham/OneDrive/Desktop/l1_day.csv')
+    snapshots = process_level1_data('l1_day.csv')
     
     print(f"\nData info: {len(snapshots)} total records")
     first_ts = snapshots['ts_event'].min()
